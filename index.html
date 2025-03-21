@@ -10,8 +10,25 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @media(max-width: 700px){
+      .main{
+        margin: 20px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      body{
+        display: flex;
+       
+      }
+    }
+    .attribution { 
+      font-size: 11px; text-align: center;
+     }
+    .attribution a {
+       color: hsl(228, 45%, 44%);
+       }
     body{
       background-color: hsl(233, 47%, 7%);
       color: white;
@@ -20,18 +37,25 @@
       align-items: center;
       justify-content: center;
       height: 97vh;
+      margin: 0;
     }
     .main{
       background-color: hsl(244, 38%, 16%);
-      width: 900px;
+      width: 90%;
+      max-width: 850px;
+      margin: 0;
       height: 400px;
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: row;
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
     }
     .container{
       padding: 40px;
+      width: 400px;
+      
     }
     .category{
       display: flex;
@@ -46,12 +70,17 @@
     p{
       font-size: 15px;
       color: hsla(0, 0%, 100%, 0.75);
+      text-align: left;
     }
     .img{
       height: 400px;  
-      width: 450px;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
+      width: 100%;
+    }
+    .img-div{
+      width: 400px;
+      min-width: 330px;
     }
   </style>
 </head>
@@ -76,7 +105,7 @@
       </div>
   </div>
   <div class="img-div">
-    <img class="img" src="./images/image-header-desktop.jpg">
+   <img class="img" src="./images/image-header-desktop.jpg">
   </div>
   </div>
   <div class="attribution">
